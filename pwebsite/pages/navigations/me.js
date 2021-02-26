@@ -1,56 +1,48 @@
 import Layout from "../../components/layout";
 
-export default function me() {
-    return <Layout>
-        <div>Hello! I am KePing Zang,born in GuiYang GuiZhou province in china.
-            I was graduated from Guizhou Medical University. my major is nursing.
-            and I got my bachelor degree after my graduation in the year of 2012.I spend most of my time on study.
-            And I have acquired basic knowledge of my major during my school time.Since 2013 I live in germany.
-            I learned german in germany,since 2016 I start to learn programming.I have learned C# in 2017,
-            in 2018 I have completed the Front-End-Development course in Udacity,
-            in 2019 I have completed the Full Stack Web Development course in Udacity.
-            Since 2019.08, I have been working at <a href={"https://www.vonaffenfels.de/"} target={"_blank"}>Vonaffenfels</a> in Stuttgart.
-            Programming has changed my life.
-            I have a lot of fun with it.I will keep learning programming.
+export default function me({configs}) {
+    return <Layout configs={configs}>
+        <div>
+            {configs&&configs.intros? <p dangerouslySetInnerHTML={{__html:configs.intros}}></p>:null}
         </div>
         <table className="infotable">
             <tbody className="infotablebody">
             <tr>
                 <th className="fa fa-language"></th>
                 <td className="rowheadname">Languages</td>
-                <td className="rowcontent">Chinese,German,English</td>
+                <td className="rowcontent">{configs&&configs.Languages? configs.Languages:null}</td>
             </tr>
             <tr>
                 <th className="fa fa-music"></th>
                 <td className="rowheadname">Hobbies</td>
-                <td className="rowcontent">Painting,photography,Programming,travel by walking,cooking...</td>
+                <td className="rowcontent">{configs&&configs.Hobbies? configs.Hobbies:null}...</td>
             </tr>
             <tr>
                 <th className="fa fa-compass"></th>
                 <td className="rowheadname">Position</td>
                 <td className="rowcontent">
-                    <a href="https://en.wikipedia.org/wiki/Esslingen_am_Neckar" target="_blank">Esslingen am Neckar,Germany</a>
+                    <a href={configs&&configs.Position&&configs.Position.url? configs.Position.url:null} target="_blank">{configs&&configs.Position&&configs.Position.name? configs.Position.name:null}</a>
                 </td>
             </tr>
             <tr>
                 <th className="fa fa-globe"></th>
                 <td className="rowheadname">HomeTown</td>
                 <td className="rowcontent">
-                    <a href="https://en.wikipedia.org/wiki/Guiyang" target="_blank">GuiYang,GuiZhou,China</a>
+                    <a href={configs&&configs.HomeTown&&configs.HomeTown.url? configs.HomeTown.url:null} target="_blank">{configs&&configs.HomeTown&&configs.HomeTown.name? configs.HomeTown.name:null}</a>
                 </td>
             </tr>
             <tr>
                 <th className="fa fa-road"></th>
                 <td className="rowheadname">Visited Countries</td>
-                <td className="rowcontent">10</td>
+                <td className="rowcontent">{configs&&configs.Visited_Countries? configs.Visited_Countries:null}</td>
             </tr>
             <tr>
                 <th className="fa fa-headphones"></th>
                 <td className="rowheadname">My Favorite Singer</td>
                 <td className="rowcontent">
-                    <a href="https://en.wikipedia.org/wiki/Jay_Chou" target="_blank">Jay Chou</a>
+                    <a href={configs&&configs.My_Favorite_Singer&&configs.My_Favorite_Singer.url? configs.My_Favorite_Singer.url:null} target="_blank">{configs&&configs.My_Favorite_Singer&&configs.My_Favorite_Singer.name? configs.My_Favorite_Singer.name:null}</a>
                     {"   "}
-                    <a className="fa fa-youtube" href="https://www.youtube.com/watch?v=-7r6VqSllNg&amp;list=RDEMiTjubl5ivyhGx9AXBRWj6A&amp;index=25"
+                    <a className="fa fa-youtube" href={configs&&configs.My_Favorite_Singer&&configs.My_Favorite_Singer.musicUrl? configs.My_Favorite_Singer.musicUrl:null}
                        target="_blank"></a>
                 </td>
             </tr>

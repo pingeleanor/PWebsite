@@ -1,7 +1,23 @@
-import '../styles/globals.css'
+import '../styles/globals.css';
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+let configs ;
+let firstrender = true;
+
+function MyApp({ Component, pageProps}) {
+  if(pageProps.configs && firstrender){
+    configs = pageProps.configs;
+    firstrender = false;
+  }
+  if(Object.keys(pageProps).length == 0){
+    pageProps.configs = configs;
+  }
+  return <Component {...pageProps} {...configs}/>
 }
 
+
 export default MyApp
+
+
+
+
+

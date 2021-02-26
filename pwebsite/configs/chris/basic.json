@@ -1,0 +1,21 @@
+{
+    "name": "Christian",
+    "description": ".NET,C# Developer",
+    "intros": "<p>I am Christian Kahr, from germany, now living in Esslingen Germany</p>",
+    "Languages": "Chinese,German,English",
+    "Hobbies": "Painting,photography,Programming,travel by walking,cooking",
+    "Position": {
+        "name": "Esslingen am Neckar,Germany",
+        "url": "https://en.wikipedia.org/wiki/Esslingen_am_Neckar"
+    },
+    "HomeTown": {
+        "name": "Meiningen,Germany",
+        "url": "https://de.wikipedia.org/wiki/Meiningen"
+    },
+    "Visited_Countries": 10,
+    "My_Favorite_Singer": {
+        "name": "Jay Chou",
+        "url": "https://en.wikipedia.org/wiki/Jay_Chou",
+        "musicUrl": "https://www.youtube.com/watch?v=-7r6VqSllNg&amp;list=RDEMiTjubl5ivyhGx9AXBRWj6A&amp;index=25"
+    }
+}

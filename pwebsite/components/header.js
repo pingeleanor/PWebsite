@@ -3,10 +3,11 @@ import Image from 'next/image'
 import Link from 'next/link'
 import styles from './header.module.css'
 
-const name = 'Ping'
-export const siteTitle = `${name}'s website`
 
-export default function Header() {
+
+export default function Header({configs}) {
+    const name = configs&&configs.name?configs.name :"user"
+    const siteTitle = `${name}'s website`
     return <div>
         <Head>
             <link rel="icon" href="/images/logo_title.png" />
