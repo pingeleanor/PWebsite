@@ -1,7 +1,7 @@
 import fs from 'fs'
 import path from 'path'
 
-const navigationDirectory = path.join(process.cwd(), 'pages\\navigations')
+const navigationDirectory = path.join(process.cwd(), 'pages/navigations')
 
 export function getNavigations() {
     const fileNames = fs.readdirSync(navigationDirectory)
