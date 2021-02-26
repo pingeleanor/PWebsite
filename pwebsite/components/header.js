@@ -29,7 +29,7 @@ export default function Header({configs}) {
         <>
             <Image
                 priority
-                src="/images/profile.jpg"
+                src={configs&&configs.name?configs.name=="ping"? "/images/profile.jpg":"/images/chris.jpg" :"/images/profile.jpg"}
                 className={styles.borderCircle}
                 height={150}
                 width={150}
