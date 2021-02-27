@@ -5,7 +5,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: lightskyblue;
+  background-color: rgba(200, 227, 246, 0.2);
 }
 
 .main {
