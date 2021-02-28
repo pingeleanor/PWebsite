@@ -1,4 +1,8 @@
 import Layout from "../../components/layout";
-export default function contact({configs}) {
-    return<Layout configs={configs}><div>contact</div></Layout>
+import { useContext } from 'react';
+import Context from '../../components/context';
+
+export default function contact() {
+    const { basicConfigs } = useContext(Context);
+    return<Layout configs={basicConfigs}><div>contact</div></Layout>
 }
