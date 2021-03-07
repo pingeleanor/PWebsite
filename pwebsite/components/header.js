@@ -23,7 +23,11 @@ export default function Header({configs}) {
             />
             <meta name="og:title" content={siteTitle} />
             <meta name="twitter:card" content="summary_large_image" />
+            <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"></link>
+            <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
+            <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+            <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
         </Head>
     <header className={styles.header}>
         <>

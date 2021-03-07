@@ -21,7 +21,6 @@ div {
   font-family: system-ui;
   margin-left: 15px;
   margin-right: 15px;
-  overflow: auto;
 }
 .infotable {
   margin: 30px;

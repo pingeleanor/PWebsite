@@ -17,5 +17,31 @@
         "name": "Jay Chou",
         "url": "https://en.wikipedia.org/wiki/Jay_Chou",
         "musicUrl": "https://www.youtube.com/watch?v=-7r6VqSllNg&amp;list=RDEMiTjubl5ivyhGx9AXBRWj6A&amp;index=25"
-    }
+    },
+    "my_Works": [
+        {
+            "original": "/images/pixer.png",
+            "url": "https://pingsharp.github.io/UdacityFirstHomepage/test.html"
+        },
+        {
+            "original": "/images/arcade.png",
+            "url": "https://pingsharp.github.io/frontend-nanodegree-arcade-game/"
+        },
+        {
+            "original": "/images/matching.png",
+            "url": "https://pingsharp.github.io/UdacityFirstHomepage/memoryGame.html"
+        },
+        {
+            "original": "/images/RReview.png",
+            "url": "https://pingsharp.github.io/mws-restaurant-stage-1/"
+        },
+        {
+            "original": "/images/myRead.png",
+            "url": "https://young-harbor-72776.herokuapp.com/"
+        },
+        {
+            "original": "/images/EsslingenLocation.png",
+            "url": "https://limitless-brook-74606.herokuapp.com/"
+        }
+    ]
 }
