@@ -34,15 +34,15 @@ export default class ImageGallery extends React.Component {
 
     render() {
         if(this.props.items){
-            return <div className={"swiper-container"} id={"container"} style={{height:"35%",width:"35%",position:"absolute",left:"45%",top:"65%",marginLeft:"-150px",marginTop:"-150px"}}>
+            return <div className={"swiper-container"} id={"container"} style={{height:"330px",width:"350px",position:"absolute",left:"45%",top:"75%",marginLeft:"-150px",marginTop:"-150px"}}>
                 <div className="swiper-wrapper">
                     {this.props.items.map((item,i)=>{
                         return(
-                            <div key={i} className={"swiper-slide"}  style={{backgroundImage: `url(${item.original})`,backgroundPosition:"center",backgroundSize:"cover"}}> <a href={item.url} style={{display:"block",width:"100%",height:"100%"}}></a></div>
+                            <div key={i} className={"swiper-slide"}  style={{backgroundImage: `url(${item.original})`,backgroundPosition:"center",backgroundSize:"cover"}}> <p style={{position:"fixed",top:"95%",color:"white"}}><a href={item.url} target={"_blank"}>{item.name}</a></p></div>
                         )
                     })}
                 </div>
-                <div className="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"></div>
+                <div className="swiper-pagination"></div>
             </div>
         }
         return null;

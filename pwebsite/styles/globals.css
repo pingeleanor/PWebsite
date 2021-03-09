@@ -49,8 +49,8 @@ table{
 }
 @media (max-width: 665px) {
   div {
-    width: fit-content;
     margin-left: 0px;
     margin-right: 0px;
+    width: fit-content;
   }
 }

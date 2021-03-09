@@ -21,27 +21,33 @@
     "my_Works": [
         {
             "original": "/images/pixer.png",
-            "url": "https://pingsharp.github.io/UdacityFirstHomepage/test.html"
+            "url": "https://pingsharp.github.io/UdacityFirstHomepage/test.html",
+            "name": "Udacity Project Pixer Art Maker"
         },
         {
             "original": "/images/arcade.png",
-            "url": "https://pingsharp.github.io/frontend-nanodegree-arcade-game/"
+            "url": "https://pingsharp.github.io/frontend-nanodegree-arcade-game/",
+            "name": "Udacity Classic frogger arcade game"
         },
         {
             "original": "/images/matching.png",
-            "url": "https://pingsharp.github.io/UdacityFirstHomepage/memoryGame.html"
+            "url": "https://pingsharp.github.io/UdacityFirstHomepage/memoryGame.html",
+            "name": "Udacity Memory Matching Game"
         },
         {
             "original": "/images/RReview.png",
-            "url": "https://pingsharp.github.io/mws-restaurant-stage-1/"
+            "url": "https://pingsharp.github.io/mws-restaurant-stage-1/",
+            "name": "Udacity Restaurant Review"
         },
         {
             "original": "/images/myRead.png",
-            "url": "https://young-harbor-72776.herokuapp.com/"
+            "url": "https://young-harbor-72776.herokuapp.com/",
+            "name": "Udacity my Read Project(React)"
         },
         {
             "original": "/images/EsslingenLocation.png",
-            "url": "https://limitless-brook-74606.herokuapp.com/"
+            "url": "https://limitless-brook-74606.herokuapp.com/",
+            "name": "Udacity Neighborhood Map (React) Project(Esslingen Locations)"
         }
     ]
 }
